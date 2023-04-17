@@ -1,0 +1,3 @@
+# Teleport!
+
+function tps:teleport
