@@ -14,6 +14,8 @@ execute as @s[scores={woolportals=0..}] if entity @e[tag=wool_portal, distance=.
 # the player has arrived at the other side, which may take several ticks. Once
 # the player steps away from the portal at the destination, set the score back
 # to 0.
+# Also, play the sound of exiting the portal.
+execute if entity @e[tag=wool_portal, distance=..2] as @s[scores={woolportals=-100}] run playsound minecraft:block.portal.travel ambient @a ~ ~ ~ 0.2 2
 execute if entity @e[tag=wool_portal, distance=..2] run scoreboard players set @s[scores={woolportals=-100}] woolportals -101
 execute as @s[scores={woolportals=-101}] unless entity @e[tag=wool_portal, distance=..2] run scoreboard players set @s woolportals 0
 
