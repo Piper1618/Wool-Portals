@@ -1,4 +1,7 @@
 
+# Remove the light block, if present
+fill ~ ~ ~ ~ ~ ~ minecraft:air replace minecraft:light
+
 # Disable portal in data
 execute as @s[tag=color_00,tag=side_a] run data modify storage woolportals:data portals[0].a.active set value 0
 execute as @s[tag=color_00,tag=side_b] run data modify storage woolportals:data portals[0].b.active set value 0
