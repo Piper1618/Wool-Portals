@@ -35,4 +35,4 @@ execute if block ~ ~-2 ~ minecraft:red_wool run scoreboard players set _portal_c
 execute if block ~ ~-2 ~ minecraft:black_wool run scoreboard players set _portal_color temp 15
 
 # Found side and color blocks
-execute if score _portal_side temp matches 0.. if score _portal_color temp matches 0.. run function woolportals:light_portal/06_verify_portal
+execute if score _portal_side temp matches 0.. if score _portal_color temp matches 0.. run function woolportals:activate_portal/06_verify_portal

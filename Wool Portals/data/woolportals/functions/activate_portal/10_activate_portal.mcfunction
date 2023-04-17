@@ -7,7 +7,7 @@ setblock ~ ~-1 ~ minecraft:light[level=9] replace
 data modify storage woolportals:data location set value {active:1}
 
 # Spawn the marker that will track this portal and play a cool sound
-execute positioned ~0.5 ~-1 ~0.5 summon minecraft:marker run function woolportals:light_portal/12__init_marker
+execute positioned ~0.5 ~-1 ~0.5 summon minecraft:marker run function woolportals:activate_portal/12__init_marker
 playsound minecraft:block.respawn_anchor.charge block @a ~0.5 ~ -0.5 1 1.7
 
 # Add the dimension information

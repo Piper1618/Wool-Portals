@@ -1,7 +1,7 @@
 execute unless data storage woolportals:data init run function woolportals:tech/_init
 
 # Detect player activating a new portal
-execute as @a[scores={wp_useFlint=1..}] anchored eyes at @s run function woolportals:light_portal/01_used_flint
+execute as @a[scores={wp_useFlint=1..}] anchored eyes at @s run function woolportals:activate_portal/01_used_flint
 
 # Detect a portal getting broken
 # Check every other tick. Otherwise, the chucks will never unload.

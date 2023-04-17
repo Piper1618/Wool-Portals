@@ -14,4 +14,4 @@ execute if blocks ~ ~-2 ~ ~ ~-2 ~ ~ ~-2 ~1 all run scoreboard players add _porta
 execute if blocks ~ ~-2 ~ ~ ~-2 ~ ~-1 ~-2 ~1 all run scoreboard players add _portal_check temp 1
 execute if blocks ~ ~-2 ~ ~ ~-2 ~ ~-1 ~-2 ~ all run scoreboard players add _portal_check temp 1
 
-execute if score _portal_check temp matches 8 run function woolportals:light_portal/10_activate_portal
+execute if score _portal_check temp matches 8 run function woolportals:activate_portal/10_activate_portal
