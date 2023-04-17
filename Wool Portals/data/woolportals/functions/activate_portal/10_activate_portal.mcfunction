@@ -1,5 +1,8 @@
 # We know this is a valid place to activate a portal, so activate it
 
+# Destroy the old portal, if one exists
+function woolportals:activate_portal/20__destroy_old_portal
+
 # Replace the metal block with a light source
 setblock ~ ~-1 ~ minecraft:light[level=9] replace
 
@@ -7,8 +10,8 @@ setblock ~ ~-1 ~ minecraft:light[level=9] replace
 data modify storage woolportals:data location set value {active:1}
 
 # Spawn the marker that will track this portal and play a cool sound
-execute positioned ~0.5 ~-1 ~0.5 summon minecraft:marker run function woolportals:activate_portal/12__init_marker
-playsound minecraft:block.respawn_anchor.charge block @a ~0.5 ~ -0.5 1 1.7
+execute positioned ~0.5 ~-1 ~0.5 summon minecraft:marker run function woolportals:activate_portal/30__init_marker
+playsound minecraft:block.respawn_anchor.charge block @a ~0.5 ~ ~0.5 1 1.7
 
 # Add the dimension information
 execute if dimension minecraft:overworld run data modify storage woolportals:data location.dimension set value 0

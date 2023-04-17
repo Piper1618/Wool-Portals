@@ -3,6 +3,10 @@ execute unless data storage woolportals:data init run function woolportals:tech/
 # Detect player activating a new portal
 execute as @a[scores={wp_useFlint=1..}] anchored eyes at @s run function woolportals:activate_portal/01_used_flint
 
+# Update portal destoryers, which are used to deactivate portals even when
+# they're not loaded.
+execute as @e[tag=portal_destroyer] at @s run function woolportals:portal_destroyer/01_destroy
+
 # Detect a portal getting broken
 # Check every other tick. Otherwise, the chucks will never unload.
 scoreboard players add _portal_check woolportals 1
