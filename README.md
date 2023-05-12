@@ -10,4 +10,4 @@ Once two active portals of the same wool color exist in the world, stand on eith
 
 Compatible with Minecraft 1.19.4 (known to fail in 1.19.3 and below).
 
-Dependent on my Teleport Scoreboard data pack.
+Dependent on my [Teleport Scoreboard](https://github.com/Piper1618/Teleport-Scoreboard) data pack.
